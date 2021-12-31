@@ -1,0 +1,60 @@
+body {
+  display: grid;
+  grid: auto-flow min-content / 1fr 2fr;
+  grid-template-areas: "header"
+                         "aside "
+                         "nav   "
+                         "main  "
+                         "movies  "
+                         "footer";
+  grid-gap: 1em;
+  margin: 1em;
+  background-color: #e6e4d9;
+
+}
+
+@media screen and (min-width: 350px) {
+    body {
+        grid: 150px / auto auto auto;
+        grid-template-areas: "header header"
+                             "aside  nav   "
+                             "main   main  "
+                             "pies   pies  "
+                             "footer footer";
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (min-width: 475px) {
+    body {
+        grid: 150px / auto auto auto;
+        grid-template-areas: "header header"
+                             "aside  nav   "
+                             "main   main  "
+                             "pies   pies  "
+                             "footer footer";
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (min-width: 650px) {
+    body {
+        grid: 150px / auto auto auto;
+        grid-template-areas: "header header"
+                             "aside  main  "
+                             "nav    main  "
+                             "nav   pies  "
+                             "footer footer";
+        grid-template-columns: 1fr;
+    }
+}
+
+body div {
+    object-fit: cover;
+    max-width: 100%;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}

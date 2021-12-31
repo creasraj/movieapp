@@ -1,0 +1,53 @@
+.detailContainer {
+  margin-top: 40px;
+  padding: 10px;
+  justify-content: left;
+  box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  color:rgba(255, 255, 255, 0.6);
+  display: flex;
+  flex-direction: row;
+}
+
+@media (max-width: 800px) {
+  .detailContainer {
+    flex-direction: column;
+  }
+}
+
+.back {
+  margin-top: 30px;
+}
+
+.poster img {
+  border-radius: 10px;
+  width: auto;
+  height: 450px;
+}
+
+.info {
+  width: auto;
+}
+
+.field {
+  margin-left: 30px;
+  text-align: left;
+  font-size: 20px;
+}
+
+.label {
+  color:cadetblue;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.label > p {
+  display:inline-block;
+  color: dimgray;
+  font-size: 16px;
+}
+
+.title{
+  color:white;
+  font-size: 28px;
+}

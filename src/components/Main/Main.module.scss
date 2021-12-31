@@ -1,0 +1,28 @@
+.pies {
+  grid-area: pies;
+  display: grid;
+  grid: auto-flow max-content / repeat(12, 1fr);
+  grid-gap: 1em;
+}
+
+.pies div {
+  grid-column: span 12;
+}
+
+@media screen and (min-width: 360px) {
+  .pies div {
+    grid-column: span 6;
+  }
+}
+
+@media screen and (min-width: 550px) {
+  .pies div {
+    grid-column: span 4;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .pies div {
+    grid-column: span 3;
+  }
+}
